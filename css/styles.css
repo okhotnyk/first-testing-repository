@@ -1,4 +1,13 @@
 body {
-    background-color: wheat;
-    color:darkslateblue
+    background-color: rgba(159, 198, 235, 0.726);
+    color:rgba(19, 10, 80, 0.877)
+}
+
+.main-header {
+    font-size:40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.common-text {
+    width: 700px;
 }
