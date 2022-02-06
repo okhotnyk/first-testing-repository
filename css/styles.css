@@ -11,3 +11,51 @@ body {
 .common-text {
     width: 700px;
 }
+
+.obsolete {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+.schedule {
+    background: blueviolet;
+    border-collapse: collapse;
+}
+
+.schedule-body > tr:hover {
+    background: lightblue;
+    color: #212121;
+}
+
+.schedule th,
+.schedule td {
+    padding: 8px;
+    border: 1px solid #212121;
+}
+
+
+
+
+
+.app-link {
+    color: blue;
+    /* text-decoration: none; */
+}
+
+.app-link .link {
+    color: teal;
+    text-decoration: none;
+}
+
+.app-link .link:hover,
+.app-link .link:focus {
+    color: tomato;
+}
+
+.app-link .link:active {
+    color: yellow;
+}
+
+/* .app-link .link:visited {
+    color: grey;
+} */
