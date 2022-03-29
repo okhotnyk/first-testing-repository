@@ -1,61 +1,173 @@
-body {
-    background-color: rgba(159, 198, 235, 0.726);
-    color:rgba(19, 10, 80, 0.877)
+/* Правильное оформление бокс сайзинга */
+html {
+  box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgba(159, 198, 235, 0.726);
+  color: rgba(19, 10, 80, 0.877);
+  font-family: serif;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
 .main-header {
-    font-size:40px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .common-text {
-    width: 700px;
+  width: 700px;
 }
 
 .obsolete {
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
 }
 
 .schedule {
-    background: blueviolet;
-    border-collapse: collapse;
+  background: blueviolet;
+  border-collapse: collapse;
 }
 
 .schedule-body > tr:hover {
-    background: lightblue;
-    color: #212121;
+  background: lightblue;
+  color: #212121;
 }
 
 .schedule th,
 .schedule td {
-    padding: 8px;
-    border: 1px solid #212121;
+  padding: 8px;
+  border: 1px solid #212121;
 }
 
-
-
-
-
 .app-link {
-    color: blue;
-    /* text-decoration: none; */
+  color: blue;
+  font-size: 30px;
+  /* text-decoration: none; */
 }
 
 .app-link .link {
-    color: teal;
-    text-decoration: none;
+  color: teal;
+  text-decoration: none;
 }
 
 .app-link .link:hover,
 .app-link .link:focus {
-    color: tomato;
+  color: tomato;
 }
 
 .app-link .link:active {
-    color: yellow;
+  color: yellow;
 }
 
-/* .app-link .link:visited {
-    color: grey;
+/* week planner */
+.week-planner {
+  background-color: floralwhite;
+}
+
+/* Финальная ширина блока = 150px + 30px + 30px + 5px + 5px */
+.box {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #f44336;
+  padding: 30px;
+  /* margin-right: auto;
+  margin-left: auto; */
+  background-color: #ffeb3b;
+}
+
+.container {
+  width: 1000px;
+  /* margin: 0 auto; */
+  padding: 0 15px;
+  outline: 2px solid tomato;
+}
+
+.link-block {
+  display: inline-block;
+  padding: 10px 32px;
+  margin: 10px 0px;
+
+  border-radius: 10px;
+  background-color: rgb(87, 0, 128);
+  color: white;
+
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.link-block:hover,
+.link-block:focus {
+  background-color: white;
+  color: rgb(87, 0, 128);
+}
+
+.current {
+  background-color: rgb(211, 123, 24);
+}
+
+.link-button {
+  display: inline-block;
+  width: 50px;
+  border-radius: 20px;
+  color: rgb(76, 0, 255);
+  padding: 10px 20px;
+  margin-right: 10px;
+
+  text-align: center;
+  /* outline: 1px solid rgb(119, 5, 226); */
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+
+/* .link-button:nth-child(3n + 2) {
+  background-color: blue;
 } */
+
+.link-button:nth-last-child(3n) {
+  background-color: crimson;
+}
+
+.link-button:hover,
+.link-button:focus {
+  background-color: cyan;
+  color: yellow;
+}
+
+.button-icon {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: lawngreen;
+  vertical-align: middle;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation .item {
+  margin-right: 20px;
+}
+
+.navigation .item:last-child {
+  margin-right: 0px;
+}
+
+.row {
+  display: flex;
+}
